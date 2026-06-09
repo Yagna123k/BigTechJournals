@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-blue: #2563eb;
+  --color-brand-blue-hover: #1d4ed8;
+  --color-accent-blue: #3b82f6;
+  --color-aurora-start: #e0f2fe;
+  --color-aurora-mid: #dbeafe;
+  --color-aurora-end: #f0f9ff;
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+
+  --animate-aurora: aurora 60s linear infinite;
+
+  @keyframes aurora {
+    from {
+      background-position:
+        50% 50%,
+        50% 50%;
+    }
+    to {
+      background-position:
+        350% 50%,
+        350% 50%;
+    }
+  }
+
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-slate-900;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .bg-aurora {
+    background: linear-gradient(135deg, #e0f2fe 0%, #eff6ff 50%, #f0f9ff 100%);
+  }
+  .bg-aurora-fade {
+    background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 100%);
+  }
+}
