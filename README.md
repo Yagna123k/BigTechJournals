@@ -80,7 +80,7 @@ The stack is chosen to be SEO-first, scalable, and low-maintenance.
 
 ## Vision
 
-To build Big Tech Journals into a trusted global platform where real tech journeys live, grow, and inspire millions of aspiring techies.
+To build Big Tech Journals into a trusted global platform where real tech journeys live, grow, help and inspire millions of aspiring techies.
 
 No shortcuts.
 No fake motivation.
