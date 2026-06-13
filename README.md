@@ -1,4 +1,4 @@
-# BigTechJournals 🚀
+# BigTechJournals
 
 **A place where techies unite to inspire, guide, and motivate others to crack Big Tech**
 
